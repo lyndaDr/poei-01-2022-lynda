@@ -33,18 +33,7 @@ public class TP1 {
     @Test
     public void test2 () {
 
-
-        //Démarer chrome
-        WebDriver driver = new ChromeDriver();
-        //lancer la page google
-        driver.get("https://www.amazon.fr");
-        //pour max la page
-        driver.manage().window().maximize();
-
-        //fermer les cokies
-        WebElement buttonCookies = driver.findElement(By.id("sp-cc-accept"));
-        buttonCookies.click();
-
+        
         //Afficher barre de recherche et chercher un produit et clicker sur entrer
         WebElement barreRecherche= driver.findElement(By.id("twotabsearchtextbox"));
         barreRecherche.sendKeys("machine a raclette");
@@ -70,12 +59,11 @@ public class TP1 {
         //Ajouter au panier
         WebElement buttonPanier= driver.findElement(By.id("add-to-cart-button"));
         buttonPanier.click();
-        driver.quit();
 
     }
 
     @AfterMethod
-    public void teadown() {
+    public void teardown() {
         driver.quit();
 
     }
