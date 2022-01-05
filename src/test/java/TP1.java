@@ -34,6 +34,7 @@ public class TP1 {
     @Test
     public void test2 () {
 
+        
         //Démarer chrome
         WebDriver driver = new ChromeDriver();
         //lancer la page google
