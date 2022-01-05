@@ -14,8 +14,6 @@ public class TP1 {
     @BeforeMethod
     public void setup(){
         driver = new ChromeDriver();
-
-
         //Implicite wait 2sc ici
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
 
