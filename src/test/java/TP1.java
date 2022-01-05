@@ -66,7 +66,7 @@ public class TP1 {
         resultatRecherche.click();
 
         //Ajouter au panier
-        WebElement buttonPanier= driver.findElement(By.cssSelector("[id=\"add-to-cart-button\"]"));
+        WebElement buttonPanier= driver.findElement(By.id("add-to-cart-button"));
         buttonPanier.click();
 
 
