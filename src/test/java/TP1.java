@@ -3,6 +3,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -21,7 +22,6 @@ public class TP1 {
     @Test
     public void test1 () {
 
-
         //Afficher barre de recherche et chercher un produit et clicker sur entrer
         WebElement barreRecherche= driver.findElement(By.id("twotabsearchtextbox"));
         barreRecherche.sendKeys("machine a raclette");
@@ -29,12 +29,11 @@ public class TP1 {
 
         //selectionner un element par Nom exemple de plus
         // driver.findElement(By.name("field-keywords"));
-        driver.quit();
     }
     @Test
     public void test2 () {
 
-        
+
         //Démarer chrome
         WebDriver driver = new ChromeDriver();
         //lancer la page google
@@ -56,20 +55,28 @@ public class TP1 {
 
 
         try {
-            Thread.sleep(6000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
         //1er Resultat de la recherche
         WebElement resultatRecherche= driver.findElement(By.cssSelector("[data-cel-widget='search_result_1']"));
         resultatRecherche.click();
-
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         //Ajouter au panier
         WebElement buttonPanier= driver.findElement(By.id("add-to-cart-button"));
         buttonPanier.click();
-
         driver.quit();
 
+    }
+
+    @AfterMethod
+    public void teadown() {
+        driver.quit();
 
     }
 
