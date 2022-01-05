@@ -30,8 +30,7 @@ public class TP1 {
 
 
 
-        //fermer chrome
-        //driver.quit();
+
     }
     @Test
     public void test2 () {
@@ -70,8 +69,7 @@ public class TP1 {
         buttonPanier.click();
 
 
-        //fermer chrome
-        //driver.quit();
+
     }
 
 }
