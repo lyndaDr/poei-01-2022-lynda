@@ -3,21 +3,24 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class TP1 {
-    @Test
-    public void test1 () {
-        //Démarer chrome
-        WebDriver driver = new ChromeDriver();
-        //lancer la page google
+    WebDriver driver;
+    @BeforeMethod
+    public void setup(){
+        driver = new ChromeDriver();
         driver.get("https://www.amazon.fr");
         //pour max la page
         driver.manage().window().maximize();
-
-        //fermer les cokies
         WebElement buttonCookies = driver.findElement(By.id("sp-cc-accept"));
         buttonCookies.click();
+    }
+
+    @Test
+    public void test1 () {
+
 
         //Afficher barre de recherche et chercher un produit et clicker sur entrer
         WebElement barreRecherche= driver.findElement(By.id("twotabsearchtextbox"));
@@ -26,11 +29,7 @@ public class TP1 {
 
         //selectionner un element par Nom exemple de plus
         // driver.findElement(By.name("field-keywords"));
-
-
-
-
-
+        driver.quit();
     }
     @Test
     public void test2 () {
@@ -68,6 +67,7 @@ public class TP1 {
         WebElement buttonPanier= driver.findElement(By.id("add-to-cart-button"));
         buttonPanier.click();
 
+        driver.quit();
 
 
     }
