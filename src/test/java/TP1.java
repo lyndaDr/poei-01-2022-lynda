@@ -36,9 +36,13 @@ public class TP1 {
     @Test
     public void test2 () {
 
+      //Arrange
+        String keyword= "machine a raclette";
+        By searchBarSelector = By.id("twotabsearchtextbox");
+        
         //Afficher barre de recherche et chercher un produit et clicker sur entrer
-        WebElement barreRecherche= driver.findElement(By.id("twotabsearchtextbox"));
-        barreRecherche.sendKeys("machine a raclette");
+        WebElement barreRecherche= driver.findElement(searchBarSelector);
+        barreRecherche.sendKeys(keyword);
         barreRecherche.sendKeys(Keys.ENTER);
 
         //1er Resultat de la recherche
