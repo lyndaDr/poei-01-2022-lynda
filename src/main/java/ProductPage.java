@@ -1,8 +1,8 @@
 import org.openqa.selenium.WebDriver;
 
-public class cartPage {
-    WebDriver driver;
-    public cartPage(){
+public class ProductPage {
+   WebDriver driver;
+    public ProductPage(){
         this.driver= driver;
     }
 }

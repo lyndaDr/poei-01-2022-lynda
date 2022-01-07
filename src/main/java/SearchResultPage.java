@@ -1,8 +1,8 @@
 import org.openqa.selenium.WebDriver;
 
-public class searchResultPage {
+public class SearchResultPage {
 WebDriver driver;
-    public searchResultPage(){
+    public SearchResultPage(){
         this.driver= driver;
     }
 }

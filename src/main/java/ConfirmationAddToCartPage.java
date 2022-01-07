@@ -1,11 +1,9 @@
 import org.openqa.selenium.WebDriver;
 
-public class mainPage {
-
+public class ConfirmationAddToCartPage {
     WebDriver driver;
-
-    public mainPage() {
+    public ConfirmationAddToCartPage(){
         this.driver= driver;
-
     }
+
 }
