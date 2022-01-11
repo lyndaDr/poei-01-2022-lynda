@@ -1,4 +1,4 @@
-import amazon.*;
+/*import amazon.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -56,4 +56,4 @@ public class AmazonTest {
         Assert.assertEquals(activeCartSubtotal, expectedPrice);
         Assert.assertEquals(buyboxCartSubtotal, expectedPrice);
     }
-}
+}*/
