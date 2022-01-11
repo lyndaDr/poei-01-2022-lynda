@@ -25,6 +25,7 @@ jobs:
       - run:
           name: Execute tests!
           command: |
+            chmod +x ./gradlew
             ./gradlew test --tests "AppleTest.IPhone13ProMax256GoBleuAlpinTest"
 
       - run:
