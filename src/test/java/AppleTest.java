@@ -8,7 +8,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 
-public class {
+public class AppleTest{
 
 
     WebDriver driver;
@@ -62,8 +62,7 @@ public class {
   //Assert
         //ASSERT
         //Assert.assertTrue(cartPage.getCartTitle().contains("1 379,00"), "Message d'erreur");
-       // Assert.assertTrue(cartPage.getCartTitle().contains("iPhone 13 Pro Max 256 Go Bleu Alpin"), "Message Lynda");
-       // Assert.assertTrue(cartPage.getCartTitle().contains("1 379,00"), "Message Lynda");
+       // Assert.assertTrue(cartPage.getCartTitle().contains("iPhone 13 Pro Max 256 Go Bleu Alpin"), "Message Lynda");// Assert.assertTrue(cartPage.getCartTitle().contains("1 379,00"), "Message Lynda");
         //Assert.assertTrue(cartPage.getCartTitle().contains("1 379,00"), "Message Lynda");
         //Assert.assertTrue(cartPage.getCartTitle().contains("1 379,00"), "Message Lynda");
     }
