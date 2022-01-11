@@ -63,6 +63,11 @@ public class BuyIphone13ProPage {
         driver.findElement(selectNoTradln).click();
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timesearch));
         wait.until(ExpectedConditions.elementToBeClickable(selectCart));
+        try {
+            Thread.sleep(500);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
     public void addToCart(){
