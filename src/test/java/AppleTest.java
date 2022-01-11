@@ -35,6 +35,7 @@ public class AppleTest{
     public void passedTest() {
         MainPage mainPage = new MainPage(driver);
 
+        
         Assert.assertTrue(true);
     }
 
